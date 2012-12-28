@@ -1,14 +1,14 @@
 {
     "manifest_version": 2,
     "name": "Pwd#",
-    "version": "0.1",
+    "version": "0.3",
     "description": "Pwdhash 1.7 for Chrome. Press ctrl+\\  to fill in password fields.",
     "icons": {
         "16": "ico/hash16.png",
         "48": "ico/hash48.png",
         "128": "ico/hash128.png"
     },
-    "permissions": ["storage"],
+    "permissions": ["storage", "clipboardWrite"],
     "content_scripts": [{
         "all_frames": true,
         "js": ["pwdhash.js"],
